@@ -22,12 +22,12 @@ client_scripts {
 	"client/alignment.lua",
 }
 
--- ui_page "nui/index.html"
-ui_page "nui_source/hot_reload.html"
+ui_page "nui/index.html"
+-- ui_page "nui_source/hot_reload.html"
 
 files {
-    -- "nui/**/*",
-    "nui_source/hot_reload.html",
+    "nui/**/*",
+    -- "nui_source/hot_reload.html",
 
     "locales/*.lua",
     "shared/animations.lua",
