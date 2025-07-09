@@ -73,4 +73,5 @@ return {
     ["instruct:currParticle"] = "パーティクル (%s/%s)",
     ["instruct:propMode"] = "プロップモード",
     ["instruct:particleMode"] = "パーティクルモード",
+    ["propsForceCleared"] = {msg = "アタッチされたすべてのPropを強制的に削除しました。", type = "success"},
 } 

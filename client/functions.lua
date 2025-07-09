@@ -1,4 +1,9 @@
 function CloseMenu()
+    -- If alignment editing is still active for some reason, reset to avoid leaving props lingering
+    if (Alignment and Alignment.active) then
+        Alignment.active:Reset()
+    end
+
     SetNuiFocus(false, false)
     SendNUIMessage({event = "SetOpen", data = false})
 end

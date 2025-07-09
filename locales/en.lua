@@ -73,4 +73,6 @@ return {
     ["instruct:currParticle"] = "Particle (%s/%s)", -- %s = current, %s = total]
     ["instruct:propMode"] = "Prop Mode",
     ["instruct:particleMode"] = "Particle Mode",
+
+    ["propsForceCleared"] = {msg = "All attached props have been forcefully cleared.", type = "success"},
 }

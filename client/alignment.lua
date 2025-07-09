@@ -78,8 +78,11 @@ end
 
 function Alignment:Reset()
     for i = 1, #self.props do
-        if (self.props[i]?.entity and DoesEntityExist(self.props[i].entity)) then
-            DeleteEntity(self.props[i].entity)
+        local propEntity = self.props[i]?.entity
+        if (propEntity and DoesEntityExist(propEntity)) then
+            -- Detach first to ensure DeleteEntity succeeds even if the prop is still attached
+            DetachEntity(propEntity, true, true)
+            DeleteEntity(propEntity)
         end
     end
 
